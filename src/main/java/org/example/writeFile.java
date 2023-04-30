@@ -5,6 +5,7 @@ ALWAYS RETURNS FIRST LINE
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -24,6 +25,19 @@ public class writeFile extends hangman{
             }
             myWriter.close();
             Scanner myReader = new Scanner(words);
+            int counter = 0;
+            String word = "";
+            ArrayList listOfWords = new ArrayList();
+            while (myReader.hasNextLine()) {
+                listOfWords.add(myReader.nextLine());
+                counter += 1;
+            }
+            Random obj = new Random();
+            int Ran_num = obj.nextInt(counter);
+            word = (String) listOfWords.get(Ran_num);
+            myReader.close();
+            return word;
+            /*Scanner myReader = new Scanner(words);
             Random obj = new Random();
             int Ran_num = obj.nextInt(22);
             int counter = 1;
@@ -37,7 +51,7 @@ public class writeFile extends hangman{
                 counter += 1;
             }
             myReader.close();
-            return word;
+            return word;*/
         } catch (IOException e) {
             return("An error occurred when writing to the file that supports " +
              "the word selection in hangman.");
