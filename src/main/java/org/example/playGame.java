@@ -25,15 +25,16 @@ public class playGame extends hangman{
         boolean guessinword;
 
         // while loop starts here
-        while (wrong < 5 && word1.contains("_")) {
+        while (wrong < 7 && word1.contains("_")) {
 
             System.out.println(word1 + "\n");
-            int temp = 5 - wrong;
+            int temp =  7 - wrong;
             if (wrong != 0) {
 
                 // for picture 1
                 System.out.println("You have " + temp
                         + " guesses left.");
+
             }
 
             System.out.print("Your Guess:");
@@ -116,6 +117,62 @@ public class playGame extends hangman{
                         letter
                                 + " is not present in the word.");
                 wrong++;
+                
+                if (wrong == 1){
+                    System.out.println("--------------");
+                    System.out.println(" |        ");
+                    System.out.println(" |        ");
+                    System.out.println(" |       ");
+                    System.out.println(" |        ");
+                    System.out.println(" |       ");
+                    System.out.println(" |      ");
+                    System.out.println(" |");
+                } else if (wrong == 2) {
+                    System.out.println("--------------");
+                    System.out.println(" |        |");
+                    System.out.println(" |        O");
+                    System.out.println(" |        ");
+                    System.out.println(" |         ");
+                    System.out.println(" |       ");
+                    System.out.println(" |      ");
+                    System.out.println(" |");
+                } else if (wrong == 3) {
+                    System.out.println("--------------");
+                    System.out.println(" |        |");
+                    System.out.println(" |        O");
+                    System.out.println(" |        |");
+                    System.out.println(" |        | ");
+                    System.out.println(" |       ");
+                    System.out.println(" |      ");
+                    System.out.println(" |");
+                } else if (wrong == 4) {
+                    System.out.println("--------------");
+                    System.out.println(" |        |");
+                    System.out.println(" |        O");
+                    System.out.println(" |       /|");
+                    System.out.println(" |      / | ");
+                    System.out.println(" |      ");
+                    System.out.println(" |      ");
+                    System.out.println(" |");
+                } else if (wrong == 5) {
+                    System.out.println("--------------");
+                    System.out.println(" |        |");
+                    System.out.println(" |        O");
+                    System.out.println(" |       /|\\");
+                    System.out.println(" |      / | \\");
+                    System.out.println(" |       ");
+                    System.out.println(" |      ");
+                    System.out.println(" |");
+                } else if (wrong == 6) {
+                    System.out.println("--------------");
+                    System.out.println(" |        |");
+                    System.out.println(" |        O");
+                    System.out.println(" |       /|\\");
+                    System.out.println(" |      / | \\");
+                    System.out.println(" |       / ");
+                    System.out.println(" |      /   ");
+                    System.out.println(" |");
+                }
             }
 
             // guess_ = guess_ + 1, after every
@@ -125,7 +182,15 @@ public class playGame extends hangman{
         } // while loop ends
 
         // if the lifelines finishes
-        if (wrong == 5) {
+        if (wrong == 7) {
+            System.out.println("--------------");
+            System.out.println(" |        |");
+            System.out.println(" |        O");
+            System.out.println(" |       /|\\");
+            System.out.println(" |      / | \\");
+            System.out.println(" |       / \\");
+            System.out.println(" |      /   \\");
+            System.out.println(" |");
             System.out.println(
                     "YOU LOST!, maximum limit of incorrect guesses reached.");
         }
