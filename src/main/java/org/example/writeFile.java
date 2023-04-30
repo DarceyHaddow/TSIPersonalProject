@@ -1,7 +1,5 @@
 package org.example;
-/* CODE FOR READING FROM THE FILE NEEDS MODIFYING,
-ALWAYS RETURNS FIRST LINE
-*/
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -37,21 +35,6 @@ public class writeFile extends hangman{
             word = (String) listOfWords.get(Ran_num);
             myReader.close();
             return word;
-            /*Scanner myReader = new Scanner(words);
-            Random obj = new Random();
-            int Ran_num = obj.nextInt(22);
-            int counter = 1;
-            String word = "";
-            while (myReader.hasNextLine()) {
-                if (counter == Ran_num){
-
-                    word = myReader.nextLine();
-                    return word;
-                }
-                counter += 1;
-            }
-            myReader.close();
-            return word;*/
         } catch (IOException e) {
             return("An error occurred when writing to the file that supports " +
              "the word selection in hangman.");

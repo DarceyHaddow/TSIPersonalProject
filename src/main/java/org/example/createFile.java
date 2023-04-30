@@ -1,7 +1,5 @@
 package org.example;
-/* CODE FOR READING FROM THE FILE NEEDS MODIFYING,
-ALWAYS RETURNS FIRST LINE
-*/
+
 
 import java.io.File;
 import java.io.FileWriter;
@@ -16,8 +14,7 @@ public class createFile extends hangman{
             if (myObj.createNewFile()) {
                 String word = writeFile.writeFile(myObj);
                 return word;
-                //System.out.println("File created: " + myObj.getName());
-                } else {
+            } else {
                 Scanner myReader = new Scanner(myObj);
                 int counter = 0;
                 String word = "";
@@ -33,7 +30,6 @@ public class createFile extends hangman{
                 return word;
             }
         } catch (IOException e) {
-            //System.out.println("error at creating the file");
             return ("An error occurred when creating the file that supports " +
                     "the word selection in hangman.");
         }
