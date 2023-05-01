@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class playGame extends hangman {
+public class PlayGame extends Hangman {
     public static void startGame(String word, String word1) {
         Scanner input = new Scanner(System.in);
         int guess_ = 0;

@@ -3,11 +3,9 @@ package org.example;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
 
-public class writeFile extends hangman{
+
+public class WriteFile extends Hangman{
     public static String writeFile(File words){
 
         String[] company = { "Alien", "Potato", "System",
@@ -22,18 +20,7 @@ public class writeFile extends hangman{
                 myWriter.write(company[i] + "\n");
             }
             myWriter.close();
-            Scanner myReader = new Scanner(words);
-            int counter = 0;
-            String word = "";
-            ArrayList listOfWords = new ArrayList();
-            while (myReader.hasNextLine()) {
-                listOfWords.add(myReader.nextLine());
-                counter += 1;
-            }
-            Random obj = new Random();
-            int Ran_num = obj.nextInt(counter);
-            word = (String) listOfWords.get(Ran_num);
-            myReader.close();
+            String word = ReadFile.readFile(words);
             return word;
         } catch (IOException e) {
             return("An error occurred when writing to the file that supports " +

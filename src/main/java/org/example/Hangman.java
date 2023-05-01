@@ -1,14 +1,12 @@
 package org.example;
 
-import java.util.Random;
-
-public class hangman {
+public class Hangman {
     public static void run(){
 
         System.out.println("******Welcome to HANGMAN GAME******");
 
 
-        String word = createFile.createFile();
+        String word = CreateFile.createFile();
         word = word.toUpperCase();
 
 
@@ -16,7 +14,7 @@ public class hangman {
 
 
         System.out.println("let's play the game");
-        playGame.startGame(word, word1);
+        PlayGame.startGame(word, word1);
     }
 
 }

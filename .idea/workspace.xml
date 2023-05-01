@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf55419c-37f8-4c7d-a2b6-e822d26fd6d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreateFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PlayGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WriteFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/playGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/playGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/createFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CreateFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/playGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PlayGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/writeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WriteFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +47,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">
@@ -69,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682855605532</updated>
-      <workItem from="1682855606864" duration="15917000" />
+      <workItem from="1682855606864" duration="20504000" />
     </task>
     <servers />
   </component>
