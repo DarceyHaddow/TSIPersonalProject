@@ -4,8 +4,8 @@ The master branch of this repository contains the project and tests. Please look
 
 The hangman game is played using the terminal. To start the game run Main.
 
-#Tests
+# Tests
 * Class: CreateFileTest contains 2 unit tests for the CreateFile Class.
 * Class: WriteFileTest contains 1 unit test for the WriteFile Class.
-* Class: ReadFileTest contains 1 mock for the ReadFile Class.
+* Class: ReadFileTest contains 1 mock for the ReadFile Class. This class has an external call.
 * Class: PlayGametest contains 3 doubles (a mock, a stub and a fake) for the PlayGame Class.
