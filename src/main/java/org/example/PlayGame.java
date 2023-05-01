@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class PlayGame extends Hangman {
-    public static void startGame(String word, String word1) {
+    public static String startGame(String word, String word1) {
         Scanner input = new Scanner(System.in);
         int guess_ = 0;
         int wrong = 0;
@@ -49,91 +49,49 @@ public class PlayGame extends Hangman {
             } else {
                 System.out.println(letter + " is not present in the word.");
                 wrong++;
-                generateHangmanSymbol(wrong);
+                System.out.println(generateHangmanSymbol(wrong));
             }
             guess_++;
 
         }
 
         if (wrong == 7) {
-            System.out.println("YOU LOST!, maximum limit of incorrect guesses reached.");
-            System.out.println("The word was: " + word);
+            return ("YOU LOST!, maximum limit of incorrect guesses reached.\n" +"The word was: " + word);
         } else {
-            System.out.print("The word is: " + word1 + "\n Well Played, you did it!!");
+            return ("The word is: " + word1 + "\n Well Played, you did it!!");
         }
     }
 
-    public static void generateHangmanSymbol(int wrong) {
+    public static String generateHangmanSymbol(int wrong) {
         if (wrong == 1) {
-            System.out.println("--------------");
-            System.out.println(" |        ");
-            System.out.println(" |        ");
-            System.out.println(" |       ");
-            System.out.println(" |        ");
-            System.out.println(" |       ");
-            System.out.println(" |      ");
-            System.out.println(" |");
+            return("--------------\n" + " |        \n" + " |        \n" + " |       \n" +
+                    " |      \n" + " |      \n" + " |      \n" + " |");
         } else if (wrong == 2) {
-            System.out.println("--------------");
-            System.out.println(" |        |");
-            System.out.println(" |        O");
-            System.out.println(" |        ");
-            System.out.println(" |         ");
-            System.out.println(" |       ");
-            System.out.println(" |      ");
-            System.out.println(" |");
+            return("--------------\n" + " |        |\n" + " |        O\n" + " |         \n" +
+                    " |          \n" + " |       \n" + " |      \n" + " |");
         } else if (wrong == 3) {
-            System.out.println("--------------");
-            System.out.println(" |        |");
-            System.out.println(" |        O");
-            System.out.println(" |        |");
-            System.out.println(" |        | ");
-            System.out.println(" |       ");
-            System.out.println(" |      ");
-            System.out.println(" |");
+            return("--------------\n" + " |        |\n" + " |        O\n" + " |        |\n" +
+                    " |        | \n" + " |       \n" + " |      \n" + " |");
         } else if (wrong == 4) {
-            System.out.println("--------------");
-            System.out.println(" |        |");
-            System.out.println(" |        O");
-            System.out.println(" |       /|");
-            System.out.println(" |      / | ");
-            System.out.println(" |      ");
-            System.out.println(" |      ");
-            System.out.println(" |");
+            return("--------------\n" + " |        |\n" + " |        O\n" + " |       /|\n" +
+                    " |      / | \n" + " |       \n" + " |      \n" + " |");
         } else if (wrong == 5) {
-            System.out.println("--------------");
-            System.out.println(" |        |");
-            System.out.println(" |        O");
-            System.out.println(" |       /|\\");
-            System.out.println(" |      / | \\");
-            System.out.println(" |       ");
-            System.out.println(" |      ");
-            System.out.println(" |");
+            return("--------------\n" + " |        |\n" + " |        O\n" + " |       /|\\\n" +
+                    " |      / | \\\n" + " |        \n" + " |         \n" + " |");
         } else if (wrong == 6) {
-            System.out.println("--------------");
-            System.out.println(" |        |");
-            System.out.println(" |        O");
-            System.out.println(" |       /|\\");
-            System.out.println(" |      / | \\");
-            System.out.println(" |       / ");
-            System.out.println(" |      /   ");
-            System.out.println(" |");
+            return("--------------\n" + " |        |\n" + " |        O\n" + " |       /|\\\n" +
+                    " |      / | \\\n" + " |       / \n" + " |      /   \n" + " |");
         } else if (wrong == 7) {
-            System.out.println("--------------");
-            System.out.println(" |        |");
-            System.out.println(" |        O");
-            System.out.println(" |       /|\\");
-            System.out.println(" |      / | \\");
-            System.out.println(" |       / \\");
-            System.out.println(" |      /   \\");
-            System.out.println(" |");
+            return("--------------\n" + " |        |\n" + " |        O\n" + " |       /|\\\n" +
+                    " |      / | \\\n" + " |       / \\\n" + " |      /   \\\n" + " |");
         }
+        return("");
     }
 
     public static String[] letterInWord(char letter, String word, String word1) {
         System.out.println(letter + " is present in the word.");
         System.out.print("\n");
-        String[] returnWords = {"",""};
+        String[] returnWords = {"","","is present in the word"};
 
         for (int position = 0; position < word.length(); position++) {
 

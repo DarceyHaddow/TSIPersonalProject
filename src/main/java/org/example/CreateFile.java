@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 
+
 public class CreateFile extends Hangman{
     public static String createFile() {
         try {

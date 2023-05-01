@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf55419c-37f8-4c7d-a2b6-e822d26fd6d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ReadFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CreateFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PlayGameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WriteFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReadFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/createFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CreateFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/playGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PlayGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/writeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CreateFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CreateFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PlayGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HangmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HangmanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WriteFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WriteFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2P93j77vivJrrG5k02LfYJM09WL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,17 +46,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Apprentice/VSCode/MockingLab",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PlayGameTest.generateHangmanSymbolFunctionality">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="TSIHangman" />
@@ -67,8 +75,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateFileTest.createFileFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TSIHangman" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateFileTest" />
+      <option name="METHOD_NAME" value="createFileFunctionality" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateFileTest.mockCreateFileFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TSIHangman" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateFileTest" />
+      <option name="METHOD_NAME" value="mockCreateFileFunctionality" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayGameTest.generateHangmanSymbolFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TSIHangman" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayGameTest" />
+      <option name="METHOD_NAME" value="generateHangmanSymbolFunctionality" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteFileTest.writeFileFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TSIHangman" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WriteFileTest" />
+      <option name="METHOD_NAME" value="writeFileFunctionality" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayGameTest.generateHangmanSymbolFunctionality" />
+        <item itemvalue="JUnit.WriteFileTest.writeFileFunctionality" />
+        <item itemvalue="JUnit.CreateFileTest.createFileFunctionality" />
+        <item itemvalue="JUnit.CreateFileTest.mockCreateFileFunctionality" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -81,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682855605532</updated>
-      <workItem from="1682855606864" duration="20504000" />
+      <workItem from="1682855606864" duration="35405000" />
     </task>
     <servers />
   </component>
