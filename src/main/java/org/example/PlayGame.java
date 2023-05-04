@@ -36,18 +36,29 @@ public class PlayGame extends Hangman {
             letter = Character.toUpperCase(letter);
             System.out.println();
 
-            if (guessesContainsGuess == true) {
-                System.out.println("You ALREADY guessed " + letter + ". \n");
-            }
+            // strategy1
 
+            if (guessesContainsGuess == true) {
+                Context context = new Context(new GuessesContainsGuess());
+                String result = context.executeStrategy(guessesContainsGuess, letter);
+                System.out.println(result);
+                //System.out.println("You ALREADY guessed " + letter + ". \n");
+            }
+//
             guessInWord = (word.indexOf(letter)) != -1;
+
+
 
             if (guessInWord == true) {
                 String[] wordList = letterInWord(letter, word, word1);
                 word = wordList[0];
                 word1 = wordList[1];
             } else {
-                System.out.println(letter + " is not present in the word.");
+                //strategy2
+                Context context = new Context(new GuessNotInWord());
+                String result = context.executeStrategy(guessesContainsGuess, letter);
+                System.out.println(result);
+                //System.out.println(letter + " is not present in the word.");
                 wrong++;
                 System.out.println(generateHangmanSymbol(wrong));
             }
