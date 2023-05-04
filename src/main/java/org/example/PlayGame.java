@@ -36,15 +36,13 @@ public class PlayGame extends Hangman {
             letter = Character.toUpperCase(letter);
             System.out.println();
 
-            // strategy1
 
             if (guessesContainsGuess == true) {
                 Context context = new Context(new GuessesContainsGuess());
                 String result = context.executeStrategy(guessesContainsGuess, letter);
                 System.out.println(result);
-                //System.out.println("You ALREADY guessed " + letter + ". \n");
             }
-//
+
             guessInWord = (word.indexOf(letter)) != -1;
 
 
@@ -54,11 +52,9 @@ public class PlayGame extends Hangman {
                 word = wordList[0];
                 word1 = wordList[1];
             } else {
-                //strategy2
                 Context context = new Context(new GuessNotInWord());
                 String result = context.executeStrategy(guessesContainsGuess, letter);
                 System.out.println(result);
-                //System.out.println(letter + " is not present in the word.");
                 wrong++;
                 System.out.println(generateHangmanSymbol(wrong));
             }
