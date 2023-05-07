@@ -42,9 +42,10 @@ public class PlayGameTest extends PlayGame{
         Context mockContext = mock(Context.class);
         boolean guessesContainsGuess = true;
         char letter = 'A';
-        when(mockContext.executeStrategy(guessesContainsGuess, letter)).thenReturn("true");
+        when(mockContext.executeStrategy(guessesContainsGuess, letter)).thenReturn("You ALREADY guessed " + letter + ". \n");
         String result = mockContext.executeStrategy(guessesContainsGuess, letter);
-        assertEquals("true",result);
+        String expected = "You ALREADY guessed " + letter + ". \n";
+        assertEquals(expected,result);
     }
 
 }
